@@ -15,7 +15,7 @@ import java.util.List;
  * 3. 方法名约定
  */
 @Repository
-public interface CustomerDao extends JpaRepository<Customer, Integer>, JpaSpecificationExecutor<Integer> {
+public interface CustomerDao extends JpaRepository<Customer, Integer>, JpaSpecificationExecutor<Customer> {
 
     /**
      * 案例：根据客户名称查询客户
