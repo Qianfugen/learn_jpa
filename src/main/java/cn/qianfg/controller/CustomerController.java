@@ -62,9 +62,9 @@ public class CustomerController {
 
     @ApiOperation(value = "统计客户数量",notes = "统计客户数量")
     @GetMapping("/count")
-    public BaseDataResult<Integer> count(){
-        BaseDataResult<Integer> rlt = new BaseDataResult<>();
-        rlt.setData((int) customerService.count());
+    public BaseDataResult<Long> count(){
+        BaseDataResult<Long> rlt = new BaseDataResult<>();
+        rlt.setData(customerService.count());
         return rlt;
     }
 
